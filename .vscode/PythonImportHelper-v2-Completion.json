@@ -1,0 +1,240 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "admin_login",
+        "importPath": "control_flow",
+        "description": "control_flow",
+        "isExtraImport": true,
+        "detail": "control_flow",
+        "documentation": {}
+    },
+    {
+        "label": "hows_the_weather",
+        "importPath": "control_flow",
+        "description": "control_flow",
+        "isExtraImport": true,
+        "detail": "control_flow",
+        "documentation": {}
+    },
+    {
+        "label": "fizzbuzz",
+        "importPath": "control_flow",
+        "description": "control_flow",
+        "isExtraImport": true,
+        "detail": "control_flow",
+        "documentation": {}
+    },
+    {
+        "label": "calculator",
+        "importPath": "control_flow",
+        "description": "control_flow",
+        "isExtraImport": true,
+        "detail": "control_flow",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-conditional-statements\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"bin\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-conditional-statements\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-conditional-statements\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-conditional-statements\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = \"python-p3-conditional-statements\" or os.path.basename(base)  # noqa: SIM222\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"../lib/python3.8/site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.bin.activate_this",
+        "description": ".venv.bin.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.bin.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_itemcollected",
+        "kind": 2,
+        "importPath": "lib.testing.conftest",
+        "description": "lib.testing.conftest",
+        "peekOfCode": "def pytest_itemcollected(item):\n    par = item.parent.obj\n    node = item.obj\n    pref = par.__doc__.strip() if par.__doc__ else par.__class__.__name__\n    suf = node.__doc__.strip() if node.__doc__ else node.__name__\n    if pref or suf:\n        item._nodeid = ' '.join((pref, suf))",
+        "detail": "lib.testing.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "TestAdminLogin",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestAdminLogin:\n    '''admin_login() in control_flow.py'''\n    def test_returns_access_granted_admin12345(self):\n        '''returns \"Access granted\" for username=admin and password=12345'''\n        assert(admin_login(\"admin\",\"12345\") == \"Access granted\")\n    def test_returns_access_granted_ADMIN12345(self):\n        '''returns \"Access granted\" for username=ADMIN and password=12345'''\n        assert(admin_login(\"ADMIN\", \"12345\") == \"Access granted\")\n    def test_returns_access_denied_not_admin12345(self):\n        '''returns \"Access denied\" for username!=admin or password!=12345'''",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "TestHowsTheWeather",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestHowsTheWeather:\n    '''hows_the_weather() in control_flow.py'''\n    def test_under_40_brisk(self):\n        '''returns \"It's brisk out there\" for temperature=33'''\n        assert(hows_the_weather(33) == \"It's brisk out there!\")\n    def test_under_65_chilly(self):\n        '''returns \"It's a little chilly out there!\" for temperature=55'''\n        assert(hows_the_weather(55) == \"It's a little chilly out there!\")\n    def test_above_85_too_dang_hot(self):\n        '''returns \"It's too dang hot out there!\" for temperature=99'''",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "TestFizzBuzz",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestFizzBuzz:\n    '''fizzbuzz() in control_flow.py'''\n    def test_returns_fizzbuzz_multiple_3_and_5(self):\n        '''returns \"FizzBuzz\" for num=0, num=15, num=45'''\n        assert(fizzbuzz(0) == \"FizzBuzz\")\n        assert(fizzbuzz(15) == \"FizzBuzz\")\n        assert(fizzbuzz(45) == \"FizzBuzz\")\n    def test_returns_fizz_multiple_3_not_5(self):\n        '''returns \"Fizz\" for num=3, num=33, num=42'''\n        assert(fizzbuzz(3) == \"Fizz\")",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCalculator",
+        "kind": 6,
+        "importPath": "lib.testing.lib_test",
+        "description": "lib.testing.lib_test",
+        "peekOfCode": "class TestCalculator:\n    '''calculator() in control_flow.py'''\n    def test_returns_sum_if_plus(self):\n        '''returns sum for (\"+\", 1, 2), (\"+\", 5, 7), (\"+\", 9, 90)'''\n        assert(calculator(\"+\", 1, 2) == 3)\n        assert(calculator(\"+\", 5, 7) == 12)\n        assert(calculator(\"+\", 9, 90) == 99)\n    def test_returns_difference_if_minus(self):\n        '''returns difference for (\"-\", 1, 2), (\"-\", 7, 5), (\"-\", 9, 9)'''\n        assert(calculator(\"-\", 1, 2) == -1)",
+        "detail": "lib.testing.lib_test",
+        "documentation": {}
+    },
+    {
+        "label": "admin_login",
+        "kind": 2,
+        "importPath": "lib.control_flow",
+        "description": "lib.control_flow",
+        "peekOfCode": "def admin_login(username, password):\n    if username.lower() == \"admin\" and password == \"12345\":\n        return \"Access granted\"\n    else:\n        return \"Access denied\"\ndef hows_the_weather(temperature):\n    if temperature < 40:\n        response = \"brisk\"\n    elif temperature >= 40 and temperature <= 65:\n        response = \"a little chilly\"",
+        "detail": "lib.control_flow",
+        "documentation": {}
+    },
+    {
+        "label": "hows_the_weather",
+        "kind": 2,
+        "importPath": "lib.control_flow",
+        "description": "lib.control_flow",
+        "peekOfCode": "def hows_the_weather(temperature):\n    if temperature < 40:\n        response = \"brisk\"\n    elif temperature >= 40 and temperature <= 65:\n        response = \"a little chilly\"\n    elif temperature > 85:\n        response = \"too dang hot\"\n    else:\n        response = \"perfect\"\n    return f\"It's {response} out there!\"",
+        "detail": "lib.control_flow",
+        "documentation": {}
+    },
+    {
+        "label": "fizzbuzz",
+        "kind": 2,
+        "importPath": "lib.control_flow",
+        "description": "lib.control_flow",
+        "peekOfCode": "def fizzbuzz(num):\n    if num % 3 == 0 and num % 5 == 0:\n        return \"FizzBuzz\"\n    elif num % 5 == 0:\n        return \"Buzz\"\n    elif num % 3 == 0:\n        return \"Fizz\"\n    else:\n        return num\ndef calculator(operation, num1, num2):",
+        "detail": "lib.control_flow",
+        "documentation": {}
+    },
+    {
+        "label": "calculator",
+        "kind": 2,
+        "importPath": "lib.control_flow",
+        "description": "lib.control_flow",
+        "peekOfCode": "def calculator(operation, num1, num2):\n    if operation == \"+\":\n        return num1 + num2\n    elif operation == \"-\":\n        return num1 - num2\n    elif operation == \"*\":\n        return num1 * num2\n    elif operation == \"/\":\n        return num1 / num2\n    else:",
+        "detail": "lib.control_flow",
+        "documentation": {}
+    }
+]
